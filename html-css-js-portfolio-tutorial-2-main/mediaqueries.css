@@ -48,19 +48,30 @@
     margin: 0 5%;
   }
   .section__pic-container {
-    width: 275px;
-    height: 275px;
+    /* width: 275px; */
+    /* height: 275px; */
+    width: auto;
+    height: 46vh;
     margin: 0 auto 2rem;
+    margin-left: 10%;
+    justify-content: center;
+  }
+  .about-containers {
+    width: auto;
+    /* height: 26vw; */
+    justify-content: center;
   }
   .profile-image{
     margin-left: -6rem;
   }
+  
   .about-containers {
     margin-top: 0;
   }
 }
 
 @media screen and (max-width: 600px) {
+ 
   #contact,
   footer {
     height: 40vh;
@@ -88,6 +99,10 @@
   .nav-links li a {
     font-size: 1rem;
   }
+  
+  .contact-info-container p{
+    margin-right: 1rem;
+  }
   .experience-sub-title {
     font-size: 1.25rem;
   }
@@ -99,12 +114,16 @@
     gap: 0.5rem;
     text-align: center;
   }
-  .section__pic-container {
+  .section__pic-container{
     width: auto;
     height: 46vw;
     justify-content: center;
   }
-  
+  .about-containers {
+    width: auto;
+    /* height: 26vw; */
+    justify-content: center;
+  }
   .profile-image{
     margin-left: 0px;
   }

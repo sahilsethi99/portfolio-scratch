@@ -378,6 +378,7 @@ article .icon {
   color: black;
 }
 
+
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
@@ -393,6 +394,16 @@ article .icon {
   flex: 1;
   
 }
+
+.project-description {
+  margin-bottom: 2rem; 
+}
+
+.project-description li{
+  
+  list-style: none;
+}
+
 
 /* CONTACT */
 
