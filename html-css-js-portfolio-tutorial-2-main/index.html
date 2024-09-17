@@ -47,9 +47,9 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/Sahil-Sethi-Resume.pdf')"
           >
-            Download CV
+            <img src='./assets/download-icon.png' alt="download-icon" class="icon"/> Download Resume
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
@@ -236,99 +236,59 @@
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers project-container-flex">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/youtube-project.webp"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Youtube</h2>
-            <div class="project-description">
-              <li>key point 1key point 1key point 1key point 1key point 1key point 1</li>
-              <li>key point 1key point 1key point 1key point 1key point 1</li>
-              <li>key point 1</li>
-              <li>key point 1</li>
-              <li>key point 1</li>
-            </div>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/flight-booking-system.jpg"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Airline Booking System</h2>
-            <div class="project-description">
-              <li>key point 1</li>
-              <li>key point 1</li>
-              <li>key point 1</li>
-            </div>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/heapify-1.jpg"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Heapwise</h2>
-            <div class="project-description">
-              <li>key point 1</li>
-              <li>key point 1</li>
-              <li>key point 1</li>
-            </div>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <a href="https://heapwise.netlify.app/" target="_blank"><button
-                class="btn btn-color-2 project-btn"
-              >
-                Live Demo
-              </button>
-            </a>
-            </div>
-          </div>
+      <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 20px;">
+        <!-- Project Box 1 -->
+        <div style="border: 1px solid #e0e0e0; border-radius: 10px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+          <img src="./assets/youtube-project.webp" alt="YouTube Project" style="width: 100%; border-radius: 10px;">
+          <h3 style="margin: 15px 0; font-size: 1.5em;">YouTube</h3>
+          <ul style="list-style: none; padding: 0; text-align: left; margin-bottom: 20px;">
+            <li style="margin-bottom: 10px;"><b>Stack:-</b> JS, React, Redux-Toolkit</li>
+            <li style="margin-bottom: 10px;">Built a smart search bar with debouncing to enhance
+              performance.</li>
+            <li style="margin-bottom: 10px;">Implemented React Router for navigation &
+              Redux Toolkit for state management.</li>
+            <li style="margin-bottom: 10px;">Integrated YouTube API for real-time data.</li>
+            <!-- <li style="margin-bottom: 10px;">Responsive design for all devices.</li> -->
+            <li style="margin-bottom: 10px;">Designed a responsive video page with live-chat
+              functionality, supporting various devices.</li>
+          </ul>
+          <a href="https://master--youtube-ui-react-app.netlify.app/" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #333; color: white; text-decoration: none; border-radius: 5px;">Live Demo</a>
+        </div>
+      
+        <!-- Project Box 2 (repeat the same with different content) -->
+        <div style="border: 1px solid #e0e0e0; border-radius: 10px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+          <img src="./assets/flight-booking-system.jpg" alt="Airline Booking System" style="width: 100%; border-radius: 10px;">
+          <h3 style="margin: 15px 0; font-size: 1.5em;">Airline Booking System</h3>
+          <ul style="list-style: none; padding: 0; text-align: left; margin-bottom: 20px;">
+            <li style="margin-bottom: 10px;"><b>Stack:-</b> Node.js, MySQL, Sequelize, Docker, AWS</li>
+            <li style="margin-bottom: 10px;"> Microservices architecture based backend
+              APIs.</li>
+            <li style="margin-bottom: 10px;"> Setup JWT-based authentication, role based authorization, rate limiting, RabbitMQ for pub-sub messaging,CRON scheduling, idempotency to relevent APIs. </li>
+            <li style="margin-bottom: 10px;">  Deployed services using Docker on AWS EC2, connected
+              to MySQL RDS, leveraging Sequelize migrations and
+              seeders. </li>
+            <!-- <li style="margin-bottom: 10px;">Implemented multi-step booking flow.</li> -->
+          </ul>
+          <a href="mailto:sethisahil20132013@gmail.com" style="display: inline-block; padding: 10px 20px; background-color: #333; color: white; text-decoration: none; border-radius: 5px;">Request Demo</a>
+        </div>
+      
+        <!-- Project Box 3 (repeat the same with different content) -->
+        <div style="border: 1px solid #e0e0e0; border-radius: 10px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+          <img src="./assets/heapify-1.jpg" alt="Heapwise" style="width: 100%; border-radius: 10px;">
+          <h3 style="margin: 15px 0; font-size: 1.5em;">Heapwise</h3>
+          <ul style="list-style: none; padding: 0; text-align: left; margin-bottom: 20px;">
+            <li style="margin-bottom: 10px;"><b>Stack:-</b> JS, Material UI, React</li>
+            <li style="margin-bottom: 10px;">Mimicked <b><i>Splitwise</i></b> feature of resolving a group of transactions.</li>
+            <li style="margin-bottom: 10px;">Implemented Heap data structure using JavaScript.</li>
+            <li style="margin-bottom: 10px;">Simplified Graph-based transactions using an algorithm.</li>
+            <li style="margin-bottom: 10px;">Used React Hooks for State Management.</li>
+            <li style="margin-bottom: 10px;">Visualized heap operations using D3.js.</li>
+            <!-- <li style="margin-bottom: 10px;">Responsive and interactive UI.</li> -->
+          </ul>
+          <a href="https://heapwise.netlify.app/" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #333; color: white; text-decoration: none; border-radius: 5px;">Live Demo</a>
         </div>
       </div>
+      
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
